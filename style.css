@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background-image: url("static/2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+}
+
+.first {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.first.deact {
+    transform: translate(-150px);
+    opacity: 0;
+}
+
+#result-screen {
+    position: absolute;
+    opacity: 0;
+    transform: translate(300px);
+    transition: all 1s ease-in-out;
+}
+
+#result-screen.active {
+    opacity: 1;
+    transform: translate(0px);
+    height: 100%;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active h2 {
+    font-size: 50px;
+}
+
+.active textarea {
+    margin-top: 5vh;
+    width: 80%;
+    padding: 0.1% 3%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: white 1px solid;
+    color: white;
+    border-radius: 0px;
+}
+
+#msg {
+    text-align: center;
+}
+
+.active p {
+    color: white;
+    margin-top: 0.5in;
+}
+
+.active h6 {
+    width: 90%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.416);
+    font-weight: normal;
+    padding: 2% 3%;
+    font-size: 16px;
+    margin-top: 0.2in;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.output-side {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 50%;
+    height: 100vh;
+}
+
+.input-side, .item-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-sec {
+    width: 45%;
+}
+
+.second-sec {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    width: 90%;
+    padding: 5%;
+    transform: translateX(50px);
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 2% 3%;
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    padding: 2% 3%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #5335C8;
+    padding: 2% 5%;
+    width: 200px; 
+    color: white;
+    border: none;
+    border-radius: 2px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="static/2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-side item">
+            <h2>Personal Information: </h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name-text" placeholder="Full Name" required>
+                <br>
+                <div class="second-sec">
+                    <div class="item-sec">
+                        <label for="age">Age</label>
+                        <input type="number" placeholder="18" name="age" id="age-number" required>
+                    </div>
+                    <div class="item-sec">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="myemail@gmail.com" required name="email" id="email-address">
+                    </div>
+                </div>
+                <br>
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="miss na kita </3" id="user-message" cols="30" rows="10"></textarea>
+                <br>
+                <button id="submit-button">Submit</button>
+            </form>
+        </div>
+        <div class="output-side item">
+            <div class="first" id="first">
+                <img src="static/pic1.png" alt="">
+            </div>
+             <div id="result-screen">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
