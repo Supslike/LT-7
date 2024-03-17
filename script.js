@@ -22,7 +22,7 @@ button.addEventListener("click", function(event) {
         clicked = true
     }
     let remark;
-    let cur_msg = "We will message you once you are a adult. "
+    let cur_msg = "We will message you once you are an adult. "
     if (username.value == "" || age.value == "" || email.value == "" || user_message.value == "") {
         alert("Missing fields!");
         return
