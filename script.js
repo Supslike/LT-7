@@ -11,7 +11,7 @@ var user_message = document.getElementById("user-message");
 
 var message = `<h2 id="res">Hello, {name} 😊</h2>
 <textarea id="msg" type="text" readonly>We have concluded that you are {remark}!</textarea>
-<p>{cur_msg}We will send you the message: </p>
+<p>{cur_msg}We will send you the message via email: </p>
 <h6>{message}</h6>`
 
 button.addEventListener("click", function(event) {
